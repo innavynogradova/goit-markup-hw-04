@@ -123,7 +123,7 @@ img {
   color: var(--accent-color);
 }
 
-.header-contacts {
+.header-contact-list {
   display: flex;
   margin-left: auto;
   align-items: center;
@@ -134,13 +134,21 @@ img {
   margin-left: 50px;
 }
 
-.header-contact {
+.header-contact-link {
+  display: flex;
+  align-items: center;
+  
   color: var(--header-contact-color);
 }
 
-.header-contact:hover,
-.header-contact:focus {
+.header-contact-link:hover,
+.header-contact-link:focus {
   color: var(--accent-color);
+}
+
+.header-contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .current {
@@ -387,12 +395,21 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   cursor: point;
+  color: var(--main-icon-color);
+  background-color: var(--white-color);
+}
+
+.client-link:hover {
+  color: var(--accent-color);
 }
 
 .client-item {
   flex-basis: calc(100% / 6 - 150px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+.client-icon {
+  fill: currentColor;
 }
 
 /* ----------FOOTER------------ */
